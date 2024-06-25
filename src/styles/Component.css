@@ -1,0 +1,214 @@
+.categrory-hint{
+    position: absolute;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    left: 0.5rem;
+    top: -1.7rem;
+}
+
+.category-tag-grid{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* position: relative; */
+    max-width: 100%;
+    min-height: 3rem;
+    background-color: rgb(255, 232, 200);
+    margin-top: 1.5rem;
+    /* margin-left: 11rem; */
+    align-items: center;
+    justify-content: start;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    gap: 0.7rem;
+    border-radius: 15px;
+    /* justify-content: start; */
+}
+
+.admin-btn-container{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 1rem;
+    gap: 0.7rem;
+}
+
+.edit-btn, .del-btn, .create-btn{
+    border-radius: 0.4rem;
+    border-style: none;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+.edit-btn{
+    background-color: rgb(28, 143, 236);
+    color: white;
+    margin-right: 1rem;
+}
+
+.del-btn{
+    background-color: rgb(219, 18, 18);
+    color: white;
+}
+
+.create-btn{
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    width: max-content;
+    border-radius: 50%;
+    background-color: rgb(0, 134, 18);
+    bottom: -1.2rem;
+}
+
+.create-btn:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) {
+    .post-title{
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+    
+    .post-content{
+        margin-left: 15rem;
+        margin-right: 15rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: large;
+    }
+}
+
+.cover-preview {
+    height: 9rem;
+    margin-right: 3rem;
+    /* object-fit: cover; */
+}
+
+.cover-preview:hover {
+    cursor:pointer;
+}
+
+.cover-info{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: start;
+    justify-content: center;
+    /* padding: 10rem; */
+}
+
+.post-content img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* .tag-list{
+    border-radius: 15px;
+    border-width: 1.7px;
+    border-color: rgba(185, 185, 185, 0.75);
+    border-style: solid;
+    width: 20rem;
+    height: 10rem;
+    background-color: antiquewhite;
+    margin-top: 2rem;
+    margin-left: 7rem;
+} */
+
+.grid-tag-text{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-bottom: 0;
+
+}
+
+.grid-tag-text:hover{
+    cursor:pointer;
+}
+
+.tag-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 1.7rem;
+    min-width: 1.7rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.2px 0.2rem 1rem 0.5rem rgba(99, 94, 94, 0.07);;
+}
+
+.info-date {
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
+.info-date-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-date-style{
+    height: 0.5rem;
+    width: 0.3rem;
+    background-color: rgb(129, 129, 129);
+    margin-right: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.pagination-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.dialog{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 22rem;
+    /* height: 12rem; */
+    background-color: white;
+    box-shadow: 0rem 0.7rem 2rem 0.1rem rgba(34, 34, 34, 0.15);
+    border-radius: 15px;
+}
+
+.dialog-msg{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.2rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: grey;
+}
+
+
+.dialog-btn-info{
+    width: 100%;
+    height: 100%;
+}
+
+.dialog-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 0.7rem;
+}
