@@ -13,7 +13,7 @@ function Viewer({addr}){
         if(!pause && !intervalIdRef.current){
             intervalIdRef.current = setInterval(() => {
                 getImage();
-            }, 50); // 设置为每2秒请求一次，这个时间可以根据需要调整
+            }, 50);
             console.log(intervalIdRef.current)
         }
         if(pause && intervalIdRef.current){
